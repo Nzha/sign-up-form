@@ -1,6 +1,6 @@
-/* * {
+* {
   border: 1px solid red;
-} */
+}
 
 html {
     box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 98vh;
 }
 
 main {
@@ -32,12 +32,17 @@ main {
 .side-image {
   width: 40%;
   background-image: url(../img/Mobile-login.jpg);
-  background-attachment: fixed;
-  background-position: left;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: contain;
 }
 
 .content {
   flex: 1;
+}
+
+.intro {
+  font-size: 1.25em;
+  font-weight: 500;
+  background-color: #f0f0f0;
 }

@@ -1,3 +1,7 @@
+/* * {
+  border: 1px solid red;
+} */
+
 html {
     box-sizing: border-box;
   }
@@ -15,4 +19,25 @@ html {
 body {
     /* font-family: "system"; */
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+  display: flex;
+  flex: 1;
+}
+
+.side-image {
+  width: 40%;
+  background-image: url(../img/Mobile-login.jpg);
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.content {
+  flex: 1;
 }

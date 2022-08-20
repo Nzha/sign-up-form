@@ -74,6 +74,7 @@ p:first-child {
   display: flex;
   flex-direction: column;
   width: 40ch;
+  margin-bottom: 1rem;
 }
 
 .sign {
@@ -115,6 +116,5 @@ button:hover {
   .form-row {
     display: flex;
     gap: 3rem;
-    margin-bottom: 1rem;
   }
 }

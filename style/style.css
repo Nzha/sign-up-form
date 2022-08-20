@@ -38,20 +38,12 @@ main {
   flex: 1;
 }
 
-.side-image {
-  width: 40%;
-  background-image: url(../img/Mobile-login.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .content {
   flex: 1;
 }
 
 .page-intro,
-.form-intro {
+.form-title {
   font-size: 1.5em;
   font-weight: 400;
 }
@@ -68,23 +60,17 @@ p:first-child {
 .form {
   background-color: white;
   padding: 2rem 2.5rem 1rem 2.5rem;
-  box-shadow: 0 10px 10px -10px #c7cbce
+  box-shadow: 0 10px 10px -10px #c7cbce;
 }
 
-.form-intro {
-  margin-bottom: 1rem;
-}
-
-.form-row {
-  display: flex;
-  gap: 3rem;
+.form-title {
   margin-bottom: 1rem;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40ch;
 }
 
 .sign {
@@ -104,4 +90,23 @@ button {
 button:hover {
   background-color: #da4953;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .side-image {
+    width: 40vw;
+    background-image: url(../img/Mobile-login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+  }
+
+  .form-row {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+
+
+
 }

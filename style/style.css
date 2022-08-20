@@ -58,6 +58,9 @@ p:first-child {
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
   padding: 2rem 2.5rem 1rem 2.5rem;
   box-shadow: 0 10px 10px -10px #c7cbce;
@@ -74,6 +77,9 @@ p:first-child {
 }
 
 .sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem 2.5rem 2rem 2.5rem;
 }
 
@@ -101,12 +107,14 @@ button:hover {
     background-size: 800px;
   }
 
+  .form,
+  .sign {
+    display: block;
+  }
+
   .form-row {
     display: flex;
     gap: 3rem;
     margin-bottom: 1rem;
   }
-
-
-
 }

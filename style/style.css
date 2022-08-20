@@ -67,22 +67,24 @@ p:first-child {
 
 .form {
   background-color: white;
-  padding: 1rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 2.5rem 1rem 2.5rem;
+  box-shadow: 0 3px 3px -3px black;
 }
 
 .form-row {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   margin-bottom: 1rem;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 .sign {
-  padding: 1rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 2.5rem 2rem 2.5rem;
 }
 
 button {

@@ -1,12 +1,13 @@
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 html {
     box-sizing: border-box;
   }
   *, *:before, *:after {
     box-sizing: inherit;
+
   }
 
 @font-face {
@@ -21,7 +22,16 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
-    height: 98vh;
+    height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4f5a;
+}
+
+a:hover {
+  color: #da4953;
 }
 
 main {
@@ -41,8 +51,41 @@ main {
   flex: 1;
 }
 
-.intro {
-  font-size: 1.25em;
-  font-weight: 500;
+.page-intro,
+.form-intro {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.page-intro {
   background-color: #f0f0f0;
+  padding: 10rem 2.5rem 2rem 2.5rem;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+.form {
+  background-color: white;
+  padding: 1rem 2.5rem 2rem 2.5rem;
+}
+
+.sign {
+  padding: 1rem 2.5rem 2rem 2.5rem;
+}
+
+button {
+  font-size: 1.4em;
+  color: white;
+  background-color: #ff4f5a;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 2.1rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: #da4953;
+  cursor: pointer;
 }

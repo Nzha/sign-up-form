@@ -40,11 +40,11 @@ main {
 }
 
 .side-image {
-  height: 20vh;
+  height: 30vh;
   background-image: url(../img/Mobile-login.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .content {

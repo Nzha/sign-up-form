@@ -68,7 +68,11 @@ p:first-child {
 .form {
   background-color: white;
   padding: 2rem 2.5rem 1rem 2.5rem;
-  box-shadow: 0 3px 3px -3px black;
+  box-shadow: 0 10px 10px -10px #c7cbce
+}
+
+.form-intro {
+  margin-bottom: 1rem;
 }
 
 .form-row {
@@ -94,7 +98,7 @@ button {
   border: none;
   border-radius: 5px;
   padding: 1rem 2.0rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 button:hover {

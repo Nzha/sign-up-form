@@ -3,26 +3,25 @@
 } */
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-
-  }
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 @font-face {
-    font-family: system;
-    font-style: normal;
-    font-weight: 300;
-    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
   
 body {
-    /* font-family: "system"; */
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  /* font-family: "system"; */
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 a {
@@ -71,6 +70,17 @@ p:first-child {
   padding: 1rem 2.5rem 2rem 2.5rem;
 }
 
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
 .sign {
   padding: 1rem 2.5rem 2rem 2.5rem;
 }
@@ -80,8 +90,8 @@ button {
   color: white;
   background-color: #ff4f5a;
   border: none;
-  border-radius: 12px;
-  padding: 0.9rem 2.1rem;
+  border-radius: 5px;
+  padding: 1rem 2.0rem;
   margin-bottom: 1rem;
 }
 

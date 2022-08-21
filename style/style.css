@@ -9,19 +9,12 @@ html {
   box-sizing: inherit;
 }
 
-@font-face {
-  font-family: system;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-}
-  
 body {
-  /* font-family: "system"; */
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #fafafa;
 }
 
 a {
@@ -58,7 +51,6 @@ main {
 }
 
 .page-intro {
-  background-color: #f0f0f0;
   padding: 2.5rem 2.5rem 1rem 2.5rem;
   text-align: center;
 }
@@ -94,9 +86,10 @@ p:first-child {
 
 input {
   appearance: none;
-  border: 1px solid lightgray;
-  border-radius: 3px;
+  border: 1px solid transparent;
+  border-radius: 5px;
   padding: .4rem 0.5rem;
+  background-color: #ebebeb;
 }
 
 input:focus {

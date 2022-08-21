@@ -83,8 +83,24 @@ p:first-child {
 .form-field {
   display: flex;
   flex-direction: column;
+  gap: .2rem;
   width: 40ch;
   margin-bottom: 1rem;
+}
+
+input + span {
+ position: relative;
+}
+
+input:required + span::after {
+  position: absolute;
+  content: "required";
+  color: red;
+  font-size: 0.9rem;
+  bottom: 1.9rem;
+  left: 19rem;
+
+
 }
 
 .sign {

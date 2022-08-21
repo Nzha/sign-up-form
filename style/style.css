@@ -84,6 +84,10 @@ p:first-child {
   margin-bottom: 1rem;
 } */
 
+label {
+  font-weight: 500;
+}
+
 input {
   appearance: none;
   border: 1px solid transparent;
@@ -138,7 +142,7 @@ input:valid + span::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 2.5rem 4rem 2.5rem;
 }
 
 button {
@@ -154,6 +158,20 @@ button {
 button:hover {
   background-color: #da4953;
   cursor: pointer;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 0;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:last-child {
+  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 700px) {

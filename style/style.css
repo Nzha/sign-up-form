@@ -88,6 +88,10 @@ p:first-child {
   margin-bottom: 1rem;
 }
 
+/* .form-row:not(:nth-last-child(1)) {
+  margin-bottom: 1rem;
+} */
+
 input {
   appearance: none;
   border: 1px solid lightgray;
@@ -128,8 +132,14 @@ input:invalid:focus + span::after {
 }
 
 input:valid + span::after {
-  content: '✓';
+  content: '✔';
   color: green;
+}
+
+#password:focus + span + span::after {
+  position: absolute;
+  content: "Password must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number";
+  font-size: 0.7em;
 }
 
 .sign {

@@ -23,7 +23,7 @@
             </div>
             <div class="form">
                 <div class="form-title">Let's do this!</div>
-                <form action="POST">
+                <form action="POST" id="sign-up">
                     <div class="form-row">
                         <div class="form-field">
                             <label for="first-name">First Name</label>
@@ -39,7 +39,7 @@
                     <div class="form-row">
                         <div class="form-field">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" placeholder='you@example.com' required>
                             <span></span>
                         </div>
                         <div class="form-field">
@@ -62,7 +62,7 @@
                 </form>
             </div>
             <div class="sign">
-                <button>Create Account</button>
+                <button type="submit" form="sign-up" value="Submit">Create Account</button>
                 <div class="login">Already have an account? <a href="#">Log in</a></div>
             </div>
         </div>

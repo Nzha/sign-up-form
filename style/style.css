@@ -77,30 +77,56 @@ p:first-child {
 }
 
 .form-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
-  gap: .2rem;
+  gap: .4rem;
   width: 40ch;
   margin-bottom: 1rem;
+}
+
+input {
+  appearance: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: .4rem 0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid black;
 }
 
 input + span {
  position: relative;
 }
 
-input:required + span::after {
+input:required + span::before {
   position: absolute;
   content: "required";
   color: red;
   font-size: 0.9rem;
-  bottom: 1.9rem;
+  bottom: 2.8rem;
   left: 19rem;
+}
 
+input + span::after {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 1rem;
+}
 
+input:invalid:focus + span::after {
+  content: '✖';
+  color: red;
+}
+
+input:valid + span::after {
+  content: '✓';
+  color: green;
 }
 
 .sign {

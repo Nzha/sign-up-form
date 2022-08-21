@@ -111,8 +111,8 @@ input + span {
 input:required + span::before {
   position: absolute;
   content: "required";
-  color: white;
-  background-color: #ff4f5a;
+  color: black;
+  background-color: #f0f0f0;
   padding: 0.25rem .5em;
   border-radius: 3px;
   font-size: 0.7rem;
@@ -137,7 +137,6 @@ input:valid + span::after {
 }
 
 #password:focus + span + span::after {
-  position: absolute;
   content: "Password must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number";
   font-size: 0.7em;
 }
@@ -191,5 +190,9 @@ button:hover {
   .form-row {
     display: flex;
     gap: 3rem;
+  }
+
+  #password:focus + span + span::after {
+    position: absolute;
   }
 }

@@ -44,7 +44,8 @@
                         </div>
                         <div class="form-field">
                             <label for="phone">Phone number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="111-111-1111">
+                            <input type="tel" name="phone" id="phone" placeholder="111-111-1111" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" title="Please enter a valid phone number">
+                            <span></span>
                         </div>
                     </div>
                     <div class="form-row">

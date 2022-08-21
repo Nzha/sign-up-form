@@ -107,8 +107,11 @@ input + span {
 input:required + span::before {
   position: absolute;
   content: "required";
-  color: red;
-  font-size: 0.9rem;
+  color: white;
+  background-color: #ff4f5a;
+  padding: 0.25rem .5em;
+  border-radius: 3px;
+  font-size: 0.7rem;
   bottom: 2.8rem;
   left: 19rem;
 }

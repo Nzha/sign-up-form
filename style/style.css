@@ -80,10 +80,6 @@ p:first-child {
   margin-bottom: 1rem;
 }
 
-.form-row:not(:nth-last-child(1)) {
-  /* margin-bottom: 1rem; */
-}
-
 label {
   font-weight: 500;
 }

@@ -64,7 +64,7 @@ p:first-child {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  padding: 2rem 2.5rem 2rem 2.5rem;
+  padding: 2rem 2.5rem 0 2.5rem;
   box-shadow: 0 10px 10px -10px #c7cbce;
 }
 
@@ -77,10 +77,11 @@ p:first-child {
   flex-direction: column;
   gap: .4rem;
   width: 40ch;
+  margin-bottom: 1rem;
 }
 
 .form-row:not(:nth-last-child(1)) {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 label {
@@ -134,7 +135,7 @@ input:valid + span::after {
 
 #password:focus + span + span::after {
   /* content: "Password must have minimum eight characters, at least one uppercase letter, one lowercase letter and one number"; */
-  font-size: 0.7rem;
+  /* font-size: 0.7rem; */
 }
 
 #pwd-match-display {
@@ -203,7 +204,7 @@ footer a:last-child {
   }
 
   .form {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 
   .form-row {
@@ -211,7 +212,22 @@ footer a:last-child {
     gap: 3rem;
   }
 
+  .form-field {
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .form-row:not(:nth-last-child(1)) {
+    margin-bottom: 1rem;
+  }
+
   #password:focus + span + span::after {
     position: absolute;
+  }
+
+  #pwd-match-display {
+    position: absolute;
+    bottom: -1.4rem;
+    left: -25.5rem;
   }
 }

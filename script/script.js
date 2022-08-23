@@ -7,8 +7,6 @@ pwd.addEventListener('input', pwdMatch);
 pwdConfirm.addEventListener('input', pwdMatch);
 
 function pwdMatch() {
-    console.log(pwd.value);
-    console.log(pwdConfirm.value);
     if (
        (pwd.value && pwdConfirm.value)
         && (pwdRequirements.test(pwd.value) || pwdRequirements.test(pwdConfirm.value))
